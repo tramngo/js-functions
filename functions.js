@@ -162,6 +162,14 @@ function areEqual (a,b) {
  * @return {number} the smallest number
  */
 
+function minimum (x,y) {
+	if (x>y) {
+		return y;
+	} else {
+		return x;
+	}
+}
+
 
 /**
  * Returns the largest value of two numbers.
@@ -170,6 +178,13 @@ function areEqual (a,b) {
  * @return {number} the largest number
  */
 
+function maximum (x,y) {
+	if (y>x) {
+		return y;
+	} else {
+		return x;
+	}
+}
 
 /**
  * Returns true if `n` is even.
@@ -177,6 +192,13 @@ function areEqual (a,b) {
  * @return {boolean} the number is even
  */
 
+function isEven (n) {
+	if (n%2===0) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns true if `n` is odd.
@@ -184,6 +206,13 @@ function areEqual (a,b) {
  * @return {boolean} the number is odd
  */
 
+function isOdd (n) {
+	if (n%2===0) {
+		return false;
+	} else {
+		return true;
+	}
+}
 
 /**
  * Returns a letter grade.
@@ -197,6 +226,20 @@ function areEqual (a,b) {
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade (score, maxScore) {
+	var percent = divide (score, maxScore);
+	if (percent >=0.9) {
+		return "A"; 
+	} else if (percent >= 0.8) {
+		return "B";
+	} else if (percent >= 0.7) {
+		return "C";
+	} else if (percent >=0.6) {
+		return "D";
+	} else {
+		return "F";
+	}
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -205,6 +248,7 @@ function areEqual (a,b) {
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+
 
 
 /**
