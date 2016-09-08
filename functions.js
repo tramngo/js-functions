@@ -35,8 +35,8 @@ function decrease (n) {
  * @return {number} the sum
  */
 
-function sum (x,y) {
-	return sum;
+function add (x,y) {
+	return x + y;
 }
 
 /**
@@ -46,6 +46,9 @@ function sum (x,y) {
  * @return {number} the difference
  */
 
+function subtract (x,y) {
+	return x-y;
+}
 
 /**
  * Multiplies two numbers.
@@ -54,6 +57,9 @@ function sum (x,y) {
  * @return {number} the product
  */
 
+function multiply (x,y) {
+	return x*y;
+}
 
 /**
  * Divides the first number by the second.
@@ -62,6 +68,9 @@ function sum (x,y) {
  * @return {number} the quotient
  */
 
+function divide (x,y) {
+	return x/y;
+}
 
 /**
  * Multiplies a number by itself.
@@ -69,7 +78,9 @@ function sum (x,y) {
  * @return {number} squared
  */
 
-
+function square (x) {
+	return x*x;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -80,6 +91,23 @@ function sum (x,y) {
  * @return {number} the result
  */
 
+function calculate(operation, x, y) {
+	if (operation==="add") {
+		console.log(x + " + " + y + " = " + (x+y));
+		return add(x,y); 
+	} else if (operation==="subtract") {
+		console.log(x + " - " + y + " = " + (x-y));
+		return subtract(x,y); 
+	} else if (operation==="multiply") {
+		console.log(x + " * " + y + " = " + (x*y));
+		return multiply(x,y); 
+	} else if (operation==="divide") {
+		console.log(x + " / " + y + " = " + (x/y));
+		return divide(x,y);
+	} else {
+		return false;
+	} 
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -88,6 +116,13 @@ function sum (x,y) {
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreater (a,b) {
+	if (a>b) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -96,6 +131,13 @@ function sum (x,y) {
  * @return {boolean} `a` is smaller than `b`
  */
 
+function isLess (a,b) {
+	if (a<b) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -103,6 +145,14 @@ function sum (x,y) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+
+function areEqual (a,b) {
+	if (a===b) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 
 /**
