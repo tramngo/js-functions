@@ -4,6 +4,9 @@
  * @return {string} the number as a string
  */
 
+function numberToString (number) {
+	return "" + number;
+}
 
 /**
  * Adds one to a given number.
@@ -11,6 +14,9 @@
  * @return {number}
  */
 
+function increase (n) {
+	return n + 1;
+}
 
 /**
  * Subtracts one from a given number.
@@ -18,6 +24,9 @@
  * @return {number}
  */
 
+function decrease (n) {
+	return n-1;
+}
 
 /**
  * Adds two numbers.
@@ -26,6 +35,9 @@
  * @return {number} the sum
  */
 
+function sum (x,y) {
+	return sum;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -56,6 +68,7 @@
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+
 
 
 /**
@@ -159,4 +172,3 @@
  * @param {number} radius
  * @return {object} circle
  */
-
