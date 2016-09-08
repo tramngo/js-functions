@@ -122,6 +122,7 @@ function isGreaterThan(a,b) {
 	} else {
 		return false;
 	}
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -131,9 +132,12 @@ function isGreaterThan(a,b) {
  */
 
 function isLessThan(a,b) {
-	return isGreaterThan(b,a);
+	if (a<b) {
+		return true;
+	} else {
+		return false;
+	}
 }
-
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -282,4 +286,3 @@ var circle = {
 	};
 	return circle;	
 }
-	}
