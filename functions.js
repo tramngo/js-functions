@@ -116,13 +116,12 @@ function calculate(operation, x, y) {
  * @return {boolean} `a` is larger than `b`
  */
 
-function isGreater (a,b) {
+function isGreaterThan(a,b) {
 	if (a>b) {
 		return true;
 	} else {
 		return false;
 	}
-}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -131,13 +130,10 @@ function isGreater (a,b) {
  * @return {boolean} `a` is smaller than `b`
  */
 
-function isLess (a,b) {
-	if (a<b) {
-		return true;
-	} else {
-		return false;
-	}
+function isLessThan(a,b) {
+	return isGreaterThan(b,a);
 }
+
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -249,6 +245,14 @@ function letterGrade (score, maxScore) {
  * @return {object} restaurant
  */
 
+function incrementReviews (restaurant) {
+	if (restaurant.reviews) {
+		restaurant.reviews ++;
+	} else {
+			restaurant.reviews=1;
+	}
+	return restaurant;
+}
 
 
 /**
@@ -259,6 +263,10 @@ function letterGrade (score, maxScore) {
  */
 
 
+function combine (word1, word2) {
+	return word1 + " " + word2;
+}
+
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
@@ -266,3 +274,12 @@ function letterGrade (score, maxScore) {
  * @param {number} radius
  * @return {object} circle
  */
+
+function createCircle(radius) {
+var circle = {
+		circumference: 2*(Math.PI)*radius,
+		area: (Math.PI)*radius*radius
+	};
+	return circle;	
+}
+	}
